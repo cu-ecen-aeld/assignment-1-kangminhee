@@ -13,6 +13,7 @@ if [ ! -d "$filesdir" ]; then
 	exit 1
 fi
 
+
 file_count=$(find "$filesdir" -type f | wc -l)
 
 match_count=$(grep -r -R -I -F -o -- "$searchstr" "$filesdir" 2>/dev/null | wc -l)
