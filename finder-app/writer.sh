@@ -8,7 +8,6 @@ writefile=$1
 writestr=$2
 
 mkdir -p "$(dirname "$writefile")"
-
 echo "$writestr" > "$writefile"
 
 if [ $? -ne 0 ]; then
